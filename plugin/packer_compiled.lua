@@ -94,10 +94,26 @@ _G.packer_plugins = {
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["lazygit.nvim"] = {
+    config = { "\27LJ\2\nL\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\flazygit\19load_extension\14telescope\frequire\0" },
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -135,7 +151,7 @@ _G.packer_plugins = {
     url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
-    config = { "\27LJ\2\nð\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fkeymaps\1\0\b\6k\14move_prev\6K\21move_change_prev\6j\14move_next\t<cr>\17action_enter\6J\21move_change_next\6p\18enter_diffbuf\agj\16move2parent\6q\tquit\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rundotree\17undotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\3\rposition\tleft\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0" },
+    config = { "\27LJ\2\nð\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fkeymaps\1\0\b\agj\16move2parent\6K\21move_change_prev\6k\14move_prev\t<cr>\17action_enter\6j\14move_next\6p\18enter_diffbuf\6J\21move_change_next\6q\tquit\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rundotree\17undotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\3\rposition\tleft\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0" },
     loaded = true,
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/jiaoshijie/undotree"
@@ -150,8 +166,12 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: undotree
 time([[Config for undotree]], true)
-try_loadstring("\27LJ\2\nð\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fkeymaps\1\0\b\6k\14move_prev\6K\21move_change_prev\6j\14move_next\t<cr>\17action_enter\6J\21move_change_next\6p\18enter_diffbuf\agj\16move2parent\6q\tquit\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rundotree\17undotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\3\rposition\tleft\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0", "config", "undotree")
+try_loadstring("\27LJ\2\nð\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fkeymaps\1\0\b\agj\16move2parent\6K\21move_change_prev\6k\14move_prev\t<cr>\17action_enter\6j\14move_next\6p\18enter_diffbuf\6J\21move_change_next\6q\tquit\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rundotree\17undotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\3\rposition\tleft\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0", "config", "undotree")
 time([[Config for undotree]], false)
+-- Config for: lazygit.nvim
+time([[Config for lazygit.nvim]], true)
+try_loadstring("\27LJ\2\nL\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\flazygit\19load_extension\14telescope\frequire\0", "config", "lazygit.nvim")
+time([[Config for lazygit.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

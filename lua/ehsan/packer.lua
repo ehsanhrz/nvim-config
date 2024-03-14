@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
 		run = function()
 			local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
 			ts_update()
-		end,
+        end
 	}
 	use { "catppuccin/nvim", as = "catppuccin" }
 	use {
@@ -52,14 +52,23 @@ return require('packer').startup(function(use)
 	}
     use 'nvim-lua/plenary.nvim'
     use ("folke/tokyonight.nvim")
-    
   -- LSP Support
     use ("VonHeikemen/lsp-zero.nvim")
-  
     use ("neovim/nvim-lspconfig")
-    
     use ("hrsh7th/cmp-nvim-lsp")
-    
     use ("hrsh7th/nvim-cmp")
     use("L3MON4D3/LuaSnip")
+    use("williamboman/mason.nvim")
+    use('williamboman/mason-lspconfig.nvim')
+    -- nvim v0.7.2
+    use({
+        "kdheepak/lazygit.nvim",
+        requires = {
+            "nvim-telescope/telescope.nvim",
+            "nvim-lua/plenary.nvim",
+        },
+        config = function()
+            require("telescope").load_extension("lazygit")
+        end,
+    })
 end)
