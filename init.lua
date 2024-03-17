@@ -1,4 +1,4 @@
 require("ehsan")
 -- Set colorscheme using Lua syntax
-vim.cmd('colorscheme tokyonight-night')
+vim.cmd('colorscheme nightfly')
 

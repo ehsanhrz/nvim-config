@@ -4,8 +4,15 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-	-- Packer can manage itself
+-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
+    use("bluz71/vim-nightfly-guicolors")
+    use("szw/vim-maximizer")
+    use("christoomey/vim-tmux-navigator")
+    use("nvim-tree/nvim-tree.lua")
+    use("tpope/vim-surround")
+    use("vim-scripts/ReplaceWithRegister")
+    use("numToStr/Comment.nvim")
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = function()
@@ -79,4 +86,5 @@ return require('packer').startup(function(use)
     use('mfussenegger/nvim-dap')
     use('folke/neodev.nvim')
     use("rcarriga/nvim-dap-ui")
+    use("nvim-tree/nvim-web-devicons")
 end)

@@ -74,10 +74,20 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ReplaceWithRegister = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
+    url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
   catppuccin = {
     loaded = true,
@@ -191,18 +201,38 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/vim-closer",
     url = "https://github.com/rstacruz/vim-closer"
+  },
+  ["vim-maximizer"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/vim-maximizer",
+    url = "https://github.com/szw/vim-maximizer"
+  },
+  ["vim-nightfly-guicolors"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
+    url = "https://github.com/bluz71/vim-nightfly-guicolors"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: undotree
-time([[Config for undotree]], true)
-try_loadstring("\27LJ\2\nð\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fkeymaps\1\0\b\6K\21move_change_prev\6J\21move_change_next\t<cr>\17action_enter\agj\16move2parent\6p\18enter_diffbuf\6k\14move_prev\6q\tquit\6j\14move_next\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rundotree\17undotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\3\rposition\tleft\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0", "config", "undotree")
-time([[Config for undotree]], false)
 -- Config for: lazygit.nvim
 time([[Config for lazygit.nvim]], true)
 try_loadstring("\27LJ\2\nL\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\flazygit\19load_extension\14telescope\frequire\0", "config", "lazygit.nvim")
 time([[Config for lazygit.nvim]], false)
+-- Config for: undotree
+time([[Config for undotree]], true)
+try_loadstring("\27LJ\2\nð\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fkeymaps\1\0\b\6K\21move_change_prev\6J\21move_change_next\t<cr>\17action_enter\agj\16move2parent\6p\18enter_diffbuf\6k\14move_prev\6q\tquit\6j\14move_next\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rundotree\17undotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\3\rposition\tleft\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0", "config", "undotree")
+time([[Config for undotree]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
