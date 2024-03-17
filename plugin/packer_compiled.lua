@@ -105,6 +105,11 @@ _G.packer_plugins = {
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -115,10 +120,25 @@ _G.packer_plugins = {
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-lint"] = {
     loaded = true,
@@ -134,6 +154,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/ehsan/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -156,7 +182,7 @@ _G.packer_plugins = {
     url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
-    config = { "\27LJ\2\nð\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fkeymaps\1\0\b\6j\14move_next\6K\21move_change_prev\6J\21move_change_next\t<cr>\17action_enter\agj\16move2parent\6p\18enter_diffbuf\6k\14move_prev\6q\tquit\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rundotree\17undotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\3\rposition\tleft\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0" },
+    config = { "\27LJ\2\nð\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fkeymaps\1\0\b\6K\21move_change_prev\6J\21move_change_next\t<cr>\17action_enter\agj\16move2parent\6p\18enter_diffbuf\6k\14move_prev\6q\tquit\6j\14move_next\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rundotree\17undotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\3\rposition\tleft\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0" },
     loaded = true,
     path = "/home/ehsan/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/jiaoshijie/undotree"
@@ -171,7 +197,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: undotree
 time([[Config for undotree]], true)
-try_loadstring("\27LJ\2\nð\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fkeymaps\1\0\b\6j\14move_next\6K\21move_change_prev\6J\21move_change_next\t<cr>\17action_enter\agj\16move2parent\6p\18enter_diffbuf\6k\14move_prev\6q\tquit\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rundotree\17undotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\3\rposition\tleft\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0", "config", "undotree")
+try_loadstring("\27LJ\2\nð\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fkeymaps\1\0\b\6K\21move_change_prev\6J\21move_change_next\t<cr>\17action_enter\agj\16move2parent\6p\18enter_diffbuf\6k\14move_prev\6q\tquit\6j\14move_next\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rundotree\17undotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\3\rposition\tleft\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0", "config", "undotree")
 time([[Config for undotree]], false)
 -- Config for: lazygit.nvim
 time([[Config for lazygit.nvim]], true)
