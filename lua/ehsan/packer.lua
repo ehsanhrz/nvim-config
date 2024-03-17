@@ -61,6 +61,7 @@ return require('packer').startup(function(use)
     use("williamboman/mason.nvim")
     use('williamboman/mason-lspconfig.nvim')
     -- nvim v0.7.2
+    use('mfussenegger/nvim-lint')
     use({
         "kdheepak/lazygit.nvim",
         requires = {
@@ -71,4 +72,11 @@ return require('packer').startup(function(use)
             require("telescope").load_extension("lazygit")
         end,
     })
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use('mfussenegger/nvim-dap')
+    use('folke/neodev.nvim')
+    use("rcarriga/nvim-dap-ui")
 end)
