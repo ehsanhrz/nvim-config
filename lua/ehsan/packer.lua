@@ -9,6 +9,7 @@ return require("packer").startup({
 		clone_timeout = false,
 	},
 	function(use)
+		use("jmederosalvarado/roslyn.nvim")
 		-- Packer can manage itself
 		use("wbthomason/packer.nvim")
 		use("bluz71/vim-nightfly-guicolors")

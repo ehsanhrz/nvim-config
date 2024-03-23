@@ -27,3 +27,7 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- this will Maximize the 
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+
+--nvim-dap
+keymap.set("n", "<leader>bp", ":DapToggleBreakpoint<CR>")
+keymap.set("n", "<leader>db", ":DapContinue<CR>")
