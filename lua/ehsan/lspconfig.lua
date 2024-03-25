@@ -109,12 +109,11 @@ lspconfig["lua_ls"].setup({
 		},
 	},
 })
-local pid = vim.fn.getpid()
 
 local omnisharp_bin = "/usr/local/bin/omnisharp-roslyn/OmniSharp"
 lspconfig["omnisharp"].setup({
 
-	cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
+	cmd = { omnisharp_bin, "--languageserver" },
 	capabilities = capabilities,
 	on_attach = on_attach,
 	-- Enables support for reading code style, naming convention and analyzer
@@ -151,4 +150,14 @@ lspconfig["omnisharp"].setup({
 	-- Only run analyzers against open files when 'enableRoslynAnalyzers' is
 	-- true
 	analyze_open_documents_only = false,
+})
+
+lspconfig.phpactor.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+lspconfig.gopls.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
 })
